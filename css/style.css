@@ -1,0 +1,188 @@
+ 
+body{
+    background-image:url(../slike/pozadina-pocetna.jpg)  ;
+    background-size: cover;
+}
+.sadrzaj1{
+    padding-top:25px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to top,rgb(255, 255, 255),rgb(238, 190, 45));
+    
+    font-family: PlusJakartaSans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Cantarell,Helvetica Neue,Ubuntu,sans-serif;
+    animation: myAnim1 2s ease 0s 1 normal backwards;
+
+}
+.sadrzaj1 p{
+    font-size: 20px;
+    text-align: center;
+}
+.sadrzaj1 h2{
+    font-size: 27px;
+    text-align: center;
+}
+
+#slika-logo{
+    
+    width: 250px;
+    height:250px;
+    border-radius:8px;
+    overflow: hidden; 
+    position: relative;
+    
+    /*animation: myAnim1 2s ease 0s 1 normal backwards;*/
+
+    
+}
+
+#slika-logo::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 8px solid transparent #213; 
+    border-image-slice: 1;
+    border-radius: 8px;
+    animation: rotate 2s linear infinite;
+    margin: 2px;
+  }
+
+
+.opis-1{
+    width: 600px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+    
+    
+    
+    
+}
+
+.sadrzaj2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    gap: 60px;
+    width:100% ;
+    height: 100%;
+    font-family: PlusJakartaSans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Cantarell,Helvetica Neue,Ubuntu,sans-serif;
+
+
+}
+
+.sadrzaj2 p{
+    font-size: 20px;
+    text-align: center;
+}
+.sadrzaj1 h2{
+    font-size: 22px;
+    text-align: center;
+}
+#slika-ucenici{
+    width: 380px;
+    height: 280px;
+    border-radius:6px;
+   
+    
+}
+#slika-profesori{
+    width: 380px;
+    height: 280px;
+    border-radius:6px;
+}
+#slika-tehnike-ucenja{
+    width: 380px;
+    height: 300px;
+    border-radius:6px;
+}
+.ucenici{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 400px;
+    height: 510px;
+    border: 3px solid rgb(238, 190, 45);
+    border-radius:6px;
+    background-color: white;
+    animation: myAnim 2s ease 0s 1 normal backwards;
+
+
+
+}
+.profesori{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 400px;
+    height: 510px;
+    border: 3px solid rgb(238, 190, 45);
+    border-radius:6px;
+    background-color: white;
+    animation: myAnim 2s ease 0s 1 normal backwards;
+
+}
+.tehnike-ucenja{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 400px;
+    height: 510px;
+    border: 3px solid rgb(238, 190, 45);
+    border-radius:6px;
+    background-color: white;
+    animation: myAnim 2s ease 0s 1 normal backwards;
+
+}
+
+
+
+@keyframes myAnim {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes myAnim1 {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes rotate {
+	to {
+        transform: rotate(360deg);
+    }
+}
+

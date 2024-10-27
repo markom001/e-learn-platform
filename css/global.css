@@ -1,0 +1,192 @@
+.meni-gornji{
+    background-color: rgb(238, 190, 45);
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    gap: 45px;
+    font-size: 15px;
+    border-bottom: 0.5px solid black; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    
+    
+}
+
+#logo-ime{
+    color:black ; 
+    font-size: 15px; 
+    font-weight: bold;
+}
+
+#pr-ikonica , #th-ikonica, #rg-ikonica{
+    padding-right:8px 
+}
+
+*{
+    margin: 0;
+}
+
+.meni-gornji a{
+    text-decoration: none;
+     color: black; 
+    
+
+}
+#logo-ime{
+    
+    padding-left: 25px;
+    
+}
+a:hover{
+    color: rgb(96, 94, 94);
+    
+}
+#strelica-pocetak{
+    color: rgb(3, 3, 3) ;
+    
+}
+.strelica-gore{
+    
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+    padding: 15px;
+}
+#strelica-pocetak:hover{
+    color:rgb(238, 190, 45) ;
+}
+.donji-meni{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:rgb(238, 190, 45) ; ;
+    height:  50px;
+    align-items: center;
+    gap: 20px;
+    
+
+}
+#mreza-i, #mreza-f, #mreza-t{
+    padding: 15px;
+}
+
+.donji-meni#copyright{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    align-self: flex-end;
+}
+.donji-meni i{
+    color: black;
+}
+.donji-meni i:hover{
+    color: rgb(96, 94, 94);
+}
+
+.meni-gornji .ikonica{
+    display: none;
+
+}
+
+@media screen and (max-width:600px) {
+    .meni-gornji a:not(:first-child){
+        display: none;
+    }
+    .meni-gornji a.ikonica{
+        
+        display: block;
+        justify-content: right;
+    }
+}
+  @media screen and (max-width:600px){
+    .meni-gornjirespozivnost {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(238, 190, 45) ;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding-left: 10px;
+        width: 100%;
+        border-bottom: 0.5px solid black;
+        
+    }
+    .meni-gornjirespozivnost a.ikonica{
+        position: absolute;
+        left: 10px;
+        top: 0;
+
+    }
+    .meni-gornjirespozivnost a{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-decoration: none;
+        border-bottom: 3px black;
+        height: auto;
+        
+        color: black;
+    }
+
+    .meni-gornjirespozivnost a#pr:hover{
+        
+        padding-left: 10px;
+        color: rgb(129, 125, 125);
+        border-bottom: 0.5px solid black;
+    }
+    .meni-gornjirespozivnost a#th:hover{
+        
+        padding-left: 10px;
+        color: rgb(129, 125, 125);
+        border-bottom: 0.5px solid black;
+    }
+    .meni-gornjirespozivnost a#rg:hover{
+        
+        padding-left: 10px;
+        color: rgb(129, 125, 125);
+        border-bottom: 0.5px solid black;
+    }
+    .ucenici{
+        width: 250px;
+        text-align: center;
+    }
+    .profesori{
+        width: 250px;
+        text-align: center;
+    }
+    .tehnike-ucenja{
+        width: 250px;
+        text-align: center;
+    }
+    
+
+    #slika-ucenici{
+        width: 230px;
+        height: 130px;
+        border-radius:6px;
+       
+        
+    }
+    #slika-profesori{
+        width: 230px;
+        height: 130px;
+        border-radius:6px;
+    }
+    #slika-tehnike-ucenja{
+        width: 230px;
+        height: 130px;
+        border-radius:6px;
+    }
+
+    .forma-registracija{
+    
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 10px;
+        width: 95%;
+        align-items: center;
+        align-self: center;
+        
+    }
+    
+
+}  

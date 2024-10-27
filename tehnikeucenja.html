@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5bd33e4989.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/tehnikeucenja.css">
+    <link rel="stylesheet" href="css/global.css">
+    <title>Nauci Me</title>
+</head>
+<body>
+    <div class="meni-gornji" id="meni">
+            
+
+        <a href="index.html"  id="logo-ime">NAUČI ME.</a>
+        <a href="predmeti.html" id="pr"><i class="fa-solid fa-book" id="pr-ikonica"></i>PREDMETI</a>
+        <a href="tehnikeucenja.html" id="th"><i class="fa-solid fa-brain" id="th-ikonica"></i>TEHNIKE UČENJA</a>
+        
+        <a href="registracija.html" id="rg"><i class="fa-solid fa-user" id="rg-ikonica"></i>REGISTRACIJA  </a>
+        <a href="javascript:void(0);" class="ikonica" onclick="funkcijaPadajuciMeni()"><i class="fa-solid fa-bars"></i></a>
+        
+    
+</div>
+    
+
+   
+    
+    
+    <div class = "tehnike">
+            
+        <div class = "tehnike-levo">
+            
+            <img src="slike/pomodoro-tehnika.png" class = "slike-tehnike">
+            <div class = "grupisan-tekst">
+                <h2 class = "podnaslov">Pomodoro tehnika</h2>
+                <p class = "tekst-tehnike">Pomodoro tehnika učenja predstavlja tehniku upravljanja vremenom. Kvalitetno organizovanje i upravljanje vremenom prilikom učenja je ključno za postizanje uspešnih rezultata. Učenje se, korišćenjem pomodoro tehnike, deli na dva perioda: 25 minuta učenja, a zatim 5 minuta odmora, i tako 4 puta nakon čega ćemo napraviti dužu pauzu.</p>
+         
+                <div class = "pomodoro-sat">
+                    <div id="clock" class = "vreme">
+                        <p>Vreme</p>
+                        <p id="time">25:00</p>
+                      </div>
+            
+                    <div id="clock" class = "dugmici">
+                        <button id="start" class = "dugme" type="button">
+                        Start
+                        </button>
+                        <button id="resume" class = "dugme" type="button">
+                        Resume
+                        </button>
+                        <button id="stop" class = "dugme" type="button" >
+                        Pause
+                        </button>
+                        <button id="reset" class = "dugme" type="button">
+                        Reset
+                        </button>
+                    </div>      
+                </div>   
+
+            </div>  
+        </div>
+       
+
+        
+        
+            <div class = "tehnike-desno">
+            <img src="slike/memo-tehnika.png" class = "slike-tehnike">
+            <div class = "grupisan-tekst">
+                <h2 class = "podnaslov">Memo tehnika</h2>
+                <p class = "tekst-tehnike">Kartice za učenje predstavljaju jedan sjajan alat za učenje. Pomoću kartica za učenje se pamćenje gradiva znatno olakšava, i one pomažu u aktivnom prisećanju i samostalnom ispitivanju naučenog. Tehnika se zasniva na tome da se na kartici stave ključne reči, odnosno pojmovi, a zatim se ti isti pojmovi dublje i opširnije objašnjavaju.</p>
+                <button class = "dugme" id = "dugme-memo" >Nauči više</button>
+            </div>
+        </div>
+        
+        
+
+        
+
+        <div class = "tehnike-levo">
+            <img src="slike/brzo-citanje.png" class = "slike-tehnike">
+            <div class = "grupisan-tekst">
+                <h2 class = "podnaslov">Brzo čitanje</h2>
+                <p class = "tekst-tehnike">Brzo čitanje predstavlja proces ubrzanog čitanja i upijanja reči, odnosno rečenica, za razliku od identifikovanja jedne po jedne reči. Tokom brzog čitanja skeniramo i zapisujemo ključne pojmove dok istovremeno stvaramo opštu sliku o gradivu. Zatim postavljamo pitanja vezana za te ključne pojmove, odgovaramo na njih, i tako na brz i efikasan način učimo.</p>
+                <button class = "dugme" id = "dugme-citanje" >Nauči više</button>
+            </div>
+        </div>
+
+        
+
+        <div class="tehnike-desno">
+            <img src="slike/mape-uma.png" class = "slike-tehnike">
+            <div class = "grupisan-tekst">
+                <h2 class = "podnaslov">Mape uma</h2>
+                <p class = "tekst-tehnike">Mape uma predstavljaju vizuelan način učenja koji nam pomaže u efikasnijem pamćenju gradiva i razvrstavanju velikog broja informacija u mozgu. Oko centralnog pojma se pomoću različitih boja, slova, simbola, linija strukturiraju pojmovi koji su u vezi sa njim. Na taj način možemo lakše razumeti veze između pojmova i videti širu sliku.</p>
+                <button class = "dugme" id = "dugme-mape">Napravi svoju!</button>
+            </div>
+        </div>
+    
+
+    </div>   
+    
+    <div class="strelica-gore">
+                <a href="#" id="strelica-pocetak"><i class="fa-sharp fa-solid fa-arrow-up fa-xl"></i></a>
+            </div>
+    
+    
+    <div class="donji-meni">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fa-xl" id="mreza-f"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-xl" id="mreza-i"></i></a>
+        <a href="https://tviter.com/" target="_blank"><i class="fa-brands fa-twitter fa-xl" id="mreza-t"></i></a>
+        <p id="copyright">Copyright© Nauči Me.</p> 
+        
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src = "script/tehnikeucenja.js"></script>
+    <script src="script/global.js"></script>
+</body>
+</html>

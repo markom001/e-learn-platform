@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+}
+
+.forma-registracija{
+    
+    flex-direction: column;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    
+    
+}
+
+ .forma{
+    
+    padding: 40px;
+    border: 3px solid rgb(238, 190, 45);
+    border-radius:8px;
+    box-shadow: 0 4px 8px 0  rgb(238, 190, 45), 0 6px 20px 0  rgb(228, 199, 110);
+    background-color: white;
+    
+   
+} 
+
+
+input{
+    width: 100%;
+}
+select{
+    width: 100%;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+input[type=tel] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+#izbor-predmeta {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+#naslov-registracija{
+    padding-bottom:15px ;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: rgb(238, 190, 45);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    
+  }
+  
+  input[type=submit]:hover {
+    background-color: #e5c71c;
+  }
+  
+    .opis-registracije{
+    padding-bottom: 35px;
+    background-color: aliceblue;
+  }
+  body{
+    background-image: url("../slike/slika-pozadina.jpg");
+    width: 100%;
+    height: auto;
+  } 
+
+#poruka-telefon{
+    color: red;
+    
+}
+#poruka-mail{
+    color: red;
+}
+

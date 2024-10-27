@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5bd33e4989.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/registracija.css">
+    <link rel="stylesheet" href="css/global.css">
+    
+    
+    <title>Nauci Me</title>
+</head>
+<body onload="storidz()">
+    <div class="meni-gornji" id="meni">
+            
+
+        <a href="index.html"  id="logo-ime">NAUČI ME.</a>
+        <a href="predmeti.html" id="pr"><i class="fa-solid fa-book" id="pr-ikonica"></i>PREDMETI</a>
+        <a href="tehnikeucenja.html" id="th"><i class="fa-solid fa-brain" id="th-ikonica"></i>TEHNIKE UČENJA</a>
+        
+        <a href="registracija.html" id="rg"><i class="fa-solid fa-user" id="rg-ikonica"></i>REGISTRACIJA  </a>
+        <a href="javascript:void(0);" class="ikonica" onclick="funkcijaPadajuciMeni()"><i class="fa-solid fa-bars"></i></a>
+ 
+    
+    </div>
+    
+
+    <div class="forma-registracija">
+            <form action="" class="forma" >
+            <div id="naslov-registracija">
+                    <h2>REGISTRACIJA</h2>
+            </div> 
+            <div id="ime">
+                <label for="ime">Ime</label>
+                <input type="text"id="Ime" required autofocus  placeholder="ime">
+            </div>
+            <br>
+            <div id="prezime">
+               
+                <label for="prezime">Prezime</label>
+                <input type="text" id="Prezime" required autofocus  placeholder="prezime"> 
+            </div>
+            <br>
+            <div class="broj-telefona">
+                <label for="telefon">Broj telefona</label>
+                <input type="text" id="mobilni"  required autofocus placeholder="telefon">
+                <br>
+                <span id="poruka-telefon"></span>
+            </div>
+            <div id="email" >
+                <label for="emal">E-mail</label>
+                <input type="text" id="em"  required autofocus placeholder="E-mail" >
+                <br>
+                <span id="poruka-mail"></span>
+            </div>
+            <br>
+            <div id="lozinka">
+                <label for="lozinka">Lozinka</label>
+                <input type="password" name="" id="sifra"placeholder="lozinka" required>
+                
+                <span id="poruka-lozinka">Koristite jaku lozinku</span>
+            </div>
+            <br>
+            <div id="predmeti">
+                <label for="izbor-predmeta">Izaberite predmet</label>
+                <select name="" id="izbor-predmeta">
+                <option value="" selected>Matematika</option>
+                <option value="">Ekonomija</option>
+                <option value="">Menadžment</option>
+                <option value="">Marketing</option>
+                <option value="">Programiranje</option>
+                <option value="">Informacioni sistemi</option>
+                </select>
+
+            </div>
+            <div>
+                <input type="submit" id="dugme" value="NAPRAVI NALOG"  >
+                
+            </div>
+            
+        </form>
+
+        
+
+    </div>
+    <div class="strelica-gore">
+        <a href="#" id="strelica-pocetak"><i class="fa-sharp fa-solid fa-arrow-up fa-xl"></i></a>
+        </div>
+    <div class="donji-meni">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fa-xl" id="mreza-f"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-xl" id="mreza-i"></i></a>
+        <a href="https://tviter.com/" target="_blank"><i class="fa-brands fa-twitter fa-xl" id="mreza-t"></i></a> 
+        <p id="copyright">Copyright© Nauci Me.</p>
+</div>
+
+<script src="script/predmeti.js"></script>
+<script src="script/global.js"></script> 
+</body>
+</html>
